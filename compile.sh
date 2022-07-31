@@ -10,7 +10,7 @@
 #---------
 
 Command="$(basename "$0")"
-Version="1.1.2"
+Version="1.1.3"
 DisplayVersionText="$Command v$Version"
 #SC: Set colour ID e.g "$(${SC} 2)"
 SC="tput setaf"
@@ -40,21 +40,21 @@ parser_definition() {
 Usage:
 	${2##*/} [options...] -- [executable arguments...]" ''
 	msg -- 'Options:'
-	flag	F_ClearPre			-c	--cl-pre		-- "Clear the console immediately"
-	flag	F_ClearPost			-C	--cl-pst		-- "Clear the console after compiling"
+	flag    F_ClearPre          -c  --cl-pre        -- "Clear the console immediately"
+	flag    F_ClearPost         -C  --cl-pst        -- "Clear the console after compiling"
 	msg -- ''
-	flag	F_ReadInFile		-r	--re-inf		-- "Print the contents of the input file after compiling"
-	flag	F_ReadExecOutFile	-R	--re-xout		-- "Print the contents of the executable's outputted file after it has finished running"
+	flag    F_ReadInFile        -r  --re-inf        -- "Print the contents of the input file after compiling"
+	flag    F_ReadExecOutFile   -R  --re-xout       -- "Print the contents of the executable's outputted file after it has finished running"
 	msg -- ''
-	flag	F_KeepExecFile		-s	--sk-exc		-- "Don't compile if the executable already exists"
-	flag	F_DeleteExecFile	-d	--rm-exc		-- "Delete the executable first if it already exists"
-	flag	F_DeleteExecOutFile	-D	--rm-xout		-- "Delete the executable's outputted file after it has finished running"
-	flag	F_ReplaceInFile		-i	--rp-inf		-- "Overwrite the input file"
+	flag    F_KeepExecFile      -s  --sk-exc        -- "Don't compile if the executable already exists"
+	flag    F_DeleteExecFile    -d  --rm-exc        -- "Delete the executable first if it already exists"
+	flag    F_DeleteExecOutFile -D  --rm-xout       -- "Delete the executable's outputted file after it has finished running"
+	flag    F_ReplaceInFile     -i  --rp-inf        -- "Overwrite the input file"
 	msg -- ''
 	msg -- "      --                      Redirect everyting after into the executable's arguments"
-	disp	:usage			-h	--help				-- "Display this help page and exit"
-	flag	F_EgText		-H	--help-examples		-- "Display examples and exit"
-	disp	DisplayVersionText	   --version		-- "Print the version and exit"
+	disp    :usage              -h  --help          -- "Display this help page and exit"
+	flag    F_EgText            -H  --help-examples -- "Display examples and exit"
+	disp    DisplayVersionText  --version           -- "Print the version and exit"
 	msg -- ''
 }
 
