@@ -1,7 +1,7 @@
 # compile.sh
 
-A simple bash script that compiles and launches simple c programs.
-### ![!](https://via.placeholder.com/15/ff1111/ff1111.png) **WARNING: This script has been written for macOS and thus will almost certainly fail on other operating systems.**
+A simple bash script that compiles and launches simple C programs.
+### ![!](https://via.placeholder.com/15/ff1111/ff1111.png) **This script has been written and tested macOS and will almost certainly fail on other operating systems.**
 
 ## Usage
 	compile.sh [options...] -- [executable arguments...]

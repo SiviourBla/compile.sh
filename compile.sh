@@ -1,4 +1,14 @@
 #!/usr/bin/env bash
+#---------
+# Encoding: UTF-8
+# License: MIT
+# Original Author: Blake Siviour
+# Year: 2022
+# Project: compile.sh
+# Project Summary: A simple bash script that compiles and launches simple C programs.
+# File Summary: Main script, does everything except store configuration.
+#---------
+
 Command="$(basename "$0")"
 Version="1.1.2"
 DisplayVersionText="$Command v$Version"
