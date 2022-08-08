@@ -32,7 +32,7 @@ then
 	echo "getoptions can be downloaded at:${CF} https://github.com/ko1nksm/getoptions/"
 fi
 
-#https://github.com/ko1nksm/getoptions/
+#Define options
 parser_definition() {
 	setup   REST help:usage -- \
 		"${2##*/} v$Version
