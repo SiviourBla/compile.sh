@@ -6,11 +6,12 @@
 # Year: 2022
 # Project: compile.sh
 # Project Summary: A simple bash script that compiles and launches simple C programs.
+# Project Repo: https://github.com/SiviourBla/compile.sh
 # File Summary: Main script, does everything except store configuration.
 #---------
 
 Command="$(basename "$0")"
-Version="1.1.3"
+Version="1.1.4"
 DisplayVersionText="$Command v$Version"
 #SC: Set colour ID e.g "$(${SC} 2)"
 SC="tput setaf"
